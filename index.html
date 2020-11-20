@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./fonts/gothambold/font.css">
     <link rel="stylesheet" href="./fonts/GothamBook/font.css">
+    <link rel="stylesheet" href="./fonts/Gotham Medium Regular/font.css">
     <link rel="shortcut icon" href="./favico/fav.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -30,8 +31,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse section1-header-navbar-nav" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link section1-header-navbar-nav__item" href="#section1">
+                    <div class="navbar-nav section1-header-navbar-nav-links">
+                        <a class="nav-link section1-header-navbar-nav-links__item" href="#section1">
                             <svg display="none">
                                 <symbol id="about" viewBox="0 0 32 32">
                                     <g>
@@ -40,11 +41,11 @@
                                     </g>
                                 </symbol>
                             </svg>
-                            <svg class="section1-header-navbar-nav__item-icon">
+                            <svg class="section1-header-navbar-nav-links__item-icon">
                                 <use xlink:href="#about"></use>
                             </svg>
                             About Us</a>
-                        <a class="nav-link" href="#section2">
+                        <a class="nav-link section1-header-navbar-nav-links__item" href="#cont2">
                             <svg display="none">
                                 <symbol id="projects" viewBox="0 0 32 32">
                                     <g>
@@ -53,11 +54,11 @@
                                     </g>
                                 </symbol>
                             </svg>
-                            <svg class="section1-header-navbar-nav__item-icon">
+                            <svg class="section1-header-navbar-nav-links__item-icon">
                                 <use xlink:href="#projects"></use>
                             </svg>
                             projects</a>
-                        <a class="nav-link" href="#section4">
+                        <a class="nav-link section1-header-navbar-nav-links__item" href="#section4">
                             <svg display="none">
                                 <symbol id="news" viewBox="0 0 32 32">
                                     <g>
@@ -66,11 +67,11 @@
                                     </g>
                                 </symbol>
                             </svg>
-                            <svg class="section1-header-navbar-nav__item-icon">
+                            <svg class="section1-header-navbar-nav-links__item-icon">
                                 <use xlink:href="#news"></use>
                             </svg>
                             news</a>
-                        <a class="nav-link" href="#section5">
+                        <a class="nav-link section1-header-navbar-nav-links__item" href="#section5">
                             <svg display="none">
                                 <symbol id="contact" viewBox="0 0 32 32">
                                     <g>
@@ -79,7 +80,7 @@
                                     </g>
                                 </symbol>
                             </svg>
-                            <svg class="section1-header-navbar-nav__item-icon">
+                            <svg class="section1-header-navbar-nav-links__item-icon">
                                 <use xlink:href="#contact"></use>
                             </svg>
                             contact</a>
@@ -129,84 +130,85 @@
                 </a>
             </div>
         </header>
-
         <div class="section1-main">
-            <h1 class="section1-main__title">Simple & mordern</h1>
-            <p class="section1-main__subtitle">We make the world's beautiful every day</p>
+            <div class="section1-main-content">
+                <h1 class="section1-main-content__title">Simple & mordern</h1>
+                <p class="section1-main-content__subtitle">We make the world's beautiful every day</p>
+            </div>
+
+            <aside class="section1-main-aside">
+                <nav class="section1-main-aside-nav">
+                    <a href="#section1" class="section1-asie-nav__link">
+                        <svg display="none">
+                            <symbol id="elipse1" viewBox="0 0 24 24">
+                                <g>
+                                    <path
+                                        d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                                </g>
+                            </symbol>
+                        </svg>
+                        <svg class="section1-main-aside-nav__link-icon">
+                            <use xlink:href="#elipse1"></use>
+                        </svg>
+                    </a>
+                    <a href="#section2" class="section1-main-aside-nav__link">
+                        <svg display="none">
+                            <symbol id="elipse2" viewBox="0 0 24 24">
+                                <g>
+                                    <path
+                                        d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                                </g>
+                            </symbol>
+                        </svg>
+                        <svg class="section1-main-aside-nav__link-icon">
+                            <use xlink:href="#elipse2"></use>
+                        </svg>
+                    </a>
+                    <a href="#section3" class="section1-main-aside-nav__link">
+                        <svg display="none">
+                            <symbol id="elipse3" viewBox="0 0 24 24">
+                                <g>
+                                    <path
+                                        d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                                </g>
+                            </symbol>
+                        </svg>
+                        <svg class="section1-main-aside-nav__link-icon">
+                            <use xlink:href="#elipse3"></use>
+                        </svg>
+                    </a>
+                    <a href="#section4" class="section1-main-aside-nav__link">
+                        <svg display="none">
+                            <symbol id="elipse4" viewBox="0 0 24 24">
+                                <g>
+                                    <path
+                                        d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                                </g>
+                            </symbol>
+                        </svg>
+                        <svg class="section1-main-aside-nav__link-icon">
+                            <use xlink:href="#elipse4"></use>
+                        </svg>
+                    </a>
+                    <a href="#section5" class="section1-main-aside-nav__link">
+                        <svg display="none">
+                            <symbol id="elipse5" viewBox="0 0 24 24">
+                                <g>
+                                    <path
+                                        d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                                </g>
+                            </symbol>
+                        </svg>
+                        <svg class="section1-main-aside-nav__link-icon">
+                            <use xlink:href="#elipse5"></use>
+                        </svg>
+                    </a>
+                </nav>
+            </aside>
         </div>
 
-        <aside class="section1-asie">
-            <nav class="section1-asie-nav">
-                <a href="#section1" class="section1-asie-nav__link">
-                    <svg display="none">
-                        <symbol id="elipse1" viewBox="0 0 24 24">
-                            <g>
-                                <path
-                                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
-                            </g>
-                        </symbol>
-                    </svg>
-                    <svg class="section1-header-navbar-nav__item-icon">
-                        <use xlink:href="#elipse1"></use>
-                    </svg>
-                </a>
-                <a href="#section2" class="section1-asie-nav__link">
-                    <svg display="none">
-                        <symbol id="elipse2" viewBox="0 0 24 24">
-                            <g>
-                                <path
-                                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
-                            </g>
-                        </symbol>
-                    </svg>
-                    <svg class="section1-header-navbar-nav__item-icon">
-                        <use xlink:href="#elipse2"></use>
-                    </svg>
-                </a>
-                <a href="#section3" class="section1-asie-nav__link">
-                    <svg display="none">
-                        <symbol id="elipse3" viewBox="0 0 24 24">
-                            <g>
-                                <path
-                                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
-                            </g>
-                        </symbol>
-                    </svg>
-                    <svg class="section1-header-navbar-nav__item-icon">
-                        <use xlink:href="#elipse3"></use>
-                    </svg>
-                </a>
-                <a href="#section4" class="section1-asie-nav__link">
-                    <svg display="none">
-                        <symbol id="elipse4" viewBox="0 0 24 24">
-                            <g>
-                                <path
-                                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
-                            </g>
-                        </symbol>
-                    </svg>
-                    <svg class="section1-header-navbar-nav__item-icon">
-                        <use xlink:href="#elipse4"></use>
-                    </svg>
-                </a>
-                <a href="#section5" class="section1-asie-nav__link">
-                    <svg display="none">
-                        <symbol id="elipse5" viewBox="0 0 24 24">
-                            <g>
-                                <path
-                                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
-                            </g>
-                        </symbol>
-                    </svg>
-                    <svg class="section1-header-navbar-nav__item-icon">
-                        <use xlink:href="#elipse5"></use>
-                    </svg>
-                </a>
-            </nav>
-        </aside>
-
         <div class="section1-arrow">
-            <a class="section1-arrow__link" href="#section2">
+            <a class="section1-arrow__link" href="#cont2">
                 <svg display="none">
                     <symbol id="angle-down" viewBox="0 0 1000 1000">
                         <g xmlns="http://www.w3.org/2000/svg">
@@ -224,90 +226,115 @@
         </div>
     </section>
 
-    <section class="section2 container">
+    <section class="section2 container-fluid">
         <div class="section2-title">
-            <h2 class="section2-title__text" id="#section2">what do we do</h2>
+            <div class="section2-title-line"></div>
+            <h2 class="section2-title__text" id="#cont2">what do we do</h2>
         </div>
         <div class="section2-block1">
             <div class="section2-block1-left">
-                <div class="section2-block1-left-layer1"></div>
                 <div class="section2-block1-left-layer2"></div>
+                <div class="section2-block1-left-layer1">
+                    <img class="section2-block1-left-layer1__img" src="./img/img1.png" alt="img1">
+                </div>
             </div>
             <div class="section2-block1-right">
                 <p class="section2-block1-right__subtitle">One World</p>
                 <h2 class="section2-block1-right__title">Trade Center</h2>
                 <div class="section2-block1-right-textholder">
                     <p class="section2-block1-right-textholder__text">Increasing prosperity in our lives can be
-                        accomplished by having the right frame of mind. The
-                        truth
-                        is, our thoughts are very powerful.
-                        They are capable of influencing every aspect of our daily lives, from our physical health to our
-                        social behaviors. I’m sure you’ve heard the adage, “As you think, so shall you be.”
+                        accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                    </p>
+                    <div class="section2-block1-right-textholder-hidden">
+                        <p>
+                            They are capable of influencing every aspect of our daily lives, from our physical health to
+                            our
+                            social behaviors. I’m sure you’ve heard the adage, “As you think, so shall you be.”
 
-                        If we want to improve our lives, we must first improve our thoughts. Harnessing the power of
-                        thought
-                        in a positive way has the ability to create great change in our lives, including our financial
-                        well-being and prosperity. But how? How do we take something as intangible as thoughts, and
-                        manifest
-                        them into a physical reality?
+                            If we want to improve our lives, we must first improve our thoughts. Harnessing the power of
+                            thought
+                            in a positive way has the ability to create great change in our lives, including our
+                            financial
+                            well-being and prosperity. But how? How do we take something as intangible as thoughts, and
+                            manifest
+                            them into a physical reality?
 
-                        We must first understand that being prosperous is more than having a lot of money. Prosperity is
-                        a
-                        mindset, a way of interacting in our lives, and a way of thinking. Mastering this train of
-                        thought
-                        is not easy, but it is simple enough if we keep working on it consistently.
+                            We must first understand that being prosperous is more than having a lot of money.
+                            Prosperity is
+                            a
+                            mindset, a way of interacting in our lives, and a way of thinking. Mastering this train of
+                            thought
+                            is not easy, but it is simple enough if we keep working on it consistently.
 
-                        Following are some ideas to help you improve your thoughts, and ultimately attract more
-                        prosperity
-                        into your life:
+                            Following are some ideas to help you improve your thoughts, and ultimately attract more
+                            prosperity
+                            into your life:
 
-                        Be grateful for the blessings in your life right now. Take a few minutes each day to express
-                        heartfelt gratitude for the good things in your life. Even more powerful, write a few of these
-                        blessings down each day. This helps to put your focus in the right direction — on abundance, not
-                        lack.
+                            Be grateful for the blessings in your life right now. Take a few minutes each day to express
+                            heartfelt gratitude for the good things in your life. Even more powerful, write a few of
+                            these
+                            blessings down each day. This helps to put your focus in the right direction — on abundance,
+                            not
+                            lack.
 
-                        Use positive affirmations to begin training yourself to think positively. Use “I am” statements
-                        such
-                        as “I am worthy of all that is good.” Write the statements down and repeat them nightly before
-                        bed.
-                        Over time, this will implant these thoughts into your subconscious mind, and you will begin to
-                        naturally believe them.
+                            Use positive affirmations to begin training yourself to think positively. Use “I am”
+                            statements
+                            such
+                            as “I am worthy of all that is good.” Write the statements down and repeat them nightly
+                            before
+                            bed.
+                            Over time, this will implant these thoughts into your subconscious mind, and you will begin
+                            to
+                            naturally believe them.
 
-                        Creative visualization can help you achieve prosperity by determining what it is you wish to
-                        achieve, and then thoroughly creating that image in your mind. This works in the same way
-                        affirmations do. Our subconscious will fill with images of prosperity, and eventually these
-                        subconscious “truths” will manifest in the physical. “See” yourself as being prosperous, and you
-                        will become so.
+                            Creative visualization can help you achieve prosperity by determining what it is you wish to
+                            achieve, and then thoroughly creating that image in your mind. This works in the same way
+                            affirmations do. Our subconscious will fill with images of prosperity, and eventually these
+                            subconscious “truths” will manifest in the physical. “See” yourself as being prosperous, and
+                            you
+                            will become so.
 
-                        Encourage yourself with the belief that you can achieve great things. This could also be one of
-                        your
-                        affirmations, but expand on it. If you know you can earn a certain salary, tell yourself you can
-                        earn more. Allow yourself to believe all things are possible, and you will gain the confidence
-                        needed to reach higher than you ever imagined you could. If you believe you can do it, you are
-                        more
-                        likely to take the risks associated with people who are highly successful. Prosperity and
-                        success go
-                        hand in hand, so take risks and aim higher.
+                            Encourage yourself with the belief that you can achieve great things. This could also be one
+                            of
+                            your
+                            affirmations, but expand on it. If you know you can earn a certain salary, tell yourself you
+                            can
+                            earn more. Allow yourself to believe all things are possible, and you will gain the
+                            confidence
+                            needed to reach higher than you ever imagined you could. If you believe you can do it, you
+                            are
+                            more
+                            likely to take the risks associated with people who are highly successful. Prosperity and
+                            success go
+                            hand in hand, so take risks and aim higher.
 
-                        Start a savings account. As strange as it sounds, think about this: Like Attracts Like. Even if
-                        you
-                        can only afford to put a few dollars into your account every month, it will begin to build up
-                        and
-                        attract more money.
+                            Start a savings account. As strange as it sounds, think about this: Like Attracts Like. Even
+                            if
+                            you
+                            can only afford to put a few dollars into your account every month, it will begin to build
+                            up
+                            and
+                            attract more money.
 
-                        Finally, believe you are already wealthy. The creative ability of our thoughts is such that we
-                        lend
-                        more power and energy to whatever we consistently focus on. Focusing on lack will create more
-                        lack.
-                        Focusing on wealth and prosperity will create . . . guess what?
+                            Finally, believe you are already wealthy. The creative ability of our thoughts is such that
+                            we
+                            lend
+                            more power and energy to whatever we consistently focus on. Focusing on lack will create
+                            more
+                            lack.
+                            Focusing on wealth and prosperity will create . . . guess what?
 
-                        Remember that this is a process. You likely won’t change your circumstances in one day. But over
-                        time, with consistent focus, your thoughts will begin to attract what you want. Once you master
-                        this
-                        power of thought, there are truly no limits to what you can create!</p>
+                            Remember that this is a process. You likely won’t change your circumstances in one day. But
+                            over
+                            time, with consistent focus, your thoughts will begin to attract what you want. Once you
+                            master
+                            this
+                            power of thought, there are truly no limits to what you can create!
+                        </p>
+                    </div>
                 </div>
-                <button class="section2-block1-right-textholder__btn">more details</button>
-                <p class="section2-block1-right-textholder__marker">
+                <button class="section2-block1-right__btn">more details</button>
+                <p class="section2-block1-right__marker">
                     <svg display="none">
                         <symbol id="block1-marker" viewBox="0 0 24 24">
                             <path
@@ -315,7 +342,7 @@
                             </path>
                         </symbol>
                     </svg>
-                    <svg class="section2-block1-right-textholder__marker-icon">
+                    <svg class="section2-block1-right__marker-icon">
                         <use xlink:href="#block1-marker"></use>
                     </svg>
                     New York City, United States - 1776 feet</p>
@@ -328,7 +355,8 @@
                 <div class="section2-block2-left-textholder">
                     <p class="section2-block2-left-textholder__text">Successful businesses have many things in common,
                         today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
-
+                    </p>
+                    <div class="section2-block2-left-textholder-hidden">
                         Recognition can be illustrated by two individuals entering a crowded room at a party. Both walk
                         to the far side of the room, one of them slips through the crowd easily and unnoticed as they
                         reach the far side. The second person takes much longer to reach the far side because they are
@@ -373,10 +401,11 @@
                         Ultimately, recognition is required if you want to get people “in the door” of your business (or
                         on your website for the new e-businesses). This is going to cost you money, time and effort up
                         front any way that you look at it, but if you have successfully reached your target market, the
-                        payoffs will be worth it.</p>
+                        payoffs will be worth it.
+                    </div>
                 </div>
-                <button class="section2-block2-left-textholder__btn">more details</button>
-                <p class="section2-block2-left-textholder__marker">
+                <button class="section2-block2-left__btn">more details</button>
+                <p class="section2-block2-left__marker">
                     <svg display="none">
                         <symbol id="block2-marker" viewBox="0 0 24 24">
                             <path
@@ -384,24 +413,27 @@
                             </path>
                         </symbol>
                     </svg>
-                    <svg class="section2-block2-left-textholder__marker-icon">
+                    <svg class="section2-block2-left__marker-icon">
                         <use xlink:href="#block2-marker"></use>
                     </svg>
                     Hong Kong - 1588 Feet</p>
             </div>
-            <div class="section2-block2">
-                <div class="section2-block1-left-layer1"></div>
-                <div class="section2-block1-left-layer2"></div>
+            <div class="section2-block2-right">
+                <div class="section2-block2-right-layer1">
+                    <img class="section2-block2-right-layer1__img" src="./img/img2.png" alt="img2">
+                </div>
+                <div class="section2-block2-right-layer2"></div>
             </div>
         </div>
     </section>
 
     <section class="section3" id="#section3">
         <div class="section3-title">
-            <hr>
+            <div class="section3-title-line"></div>
             <h2 class="section3-title__text">latest news</h2>
         </div>
-        <div class="section3-newsblock slick-slider">
+
+        <div class="section3-newsblock slider">
             <div class="section3-newsblock-1">
                 <img class="section3-newsblock-1__img" src="./img/news/news1.png" alt="news1">
                 <h3 class="section3-newsblock-1__title">See The Unmatched Beauty Of The Great.</h3>
@@ -410,8 +442,10 @@
                 <div class="section3-newsblock-1-info">
                     <img class="section3-newsblock-1-info__img" src="./img/news/authors/IsaacDumn.png"
                         alt="Isaac Dumn pic">
-                    <p class="section3-newsblock-1-info__text">Isaac Dunn</p>
-                    <p class="section3-newsblock-1-info__date">09 Feb 2017</p>
+                    <div class="section3-newsblock-1-info-text">
+                        <p class="section3-newsblock-1-info-text__text">Isaac Dunn</p>
+                        <p class="section3-newsblock-1-info-text__date">09 Feb 2017</p>
+                    </div>
                 </div>
             </div>
             <div class="section3-newsblock-2">
@@ -422,8 +456,10 @@
                 <div class="section3-newsblock-2-info">
                     <img class="section3-newsblock-2-info__img" src="./img/news/authors/DominicFreeman.png"
                         alt="Dominic Freeman pic">
-                    <p class="section3-newsblock-2-info__text">Dominic Freeman</p>
-                    <p class="section3-newsblock-2-info__date">24 Apr 2017</p>
+                    <div class="section3-newsblock-2-info-text">
+                        <p class="section3-newsblock-2-info-text__text">Dominic Freeman</p>
+                        <p class="section3-newsblock-2-info-text__date">24 Apr 2017</p>
+                    </div>
                 </div>
             </div>
             <div class="section3-newsblock-3">
@@ -433,11 +469,13 @@
                 <div class="section3-newsblock-3-info">
                     <img class="section3-newsblock-3-info__img" src="./img/news/authors/AliceWard.png"
                         alt="Alice Ward pic">
-                    <p class="section3-newsblock-3-info__text">Alice Ward</p>
-                    <p class="section3-newsblock-3-info__date">30 Dec 2017</p>
+                    <div class="section3-newsblock-3-info-text">
+                        <p class="section3-newsblock-3-info-text__text">Alice Ward</p>
+                        <p class="section3-newsblock-3-info-text__date">30 Dec 2017</p>
+                    </div>
                 </div>
             </div>
-            <div class="section3-newsblock-4">
+            <div class="section3-newsblock-1">
                 <img class="section3-newsblock-1__img" src="./img/news/news1.png" alt="news1">
                 <h3 class="section3-newsblock-1__title">See The Unmatched Beauty Of The Great.</h3>
                 <p class="section3-newsblock-1__text">Free directories: directories are perfect for customers that
@@ -445,11 +483,13 @@
                 <div class="section3-newsblock-1-info">
                     <img class="section3-newsblock-1-info__img" src="./img/news/authors/IsaacDumn.png"
                         alt="Isaac Dumn pic">
-                    <p class="section3-newsblock-1-info__text">Isaac Dunn</p>
-                    <p class="section3-newsblock-1-info__date">09 Feb 2017</p>
+                    <div class="section3-newsblock-1-info-text">
+                        <p class="section3-newsblock-1-info-text__text">Isaac Dunn</p>
+                        <p class="section3-newsblock-1-info-text__date">09 Feb 2017</p>
+                    </div>
                 </div>
             </div>
-            <div class="section3-newsblock-5">
+            <div class="section3-newsblock-2">
                 <img class="section3-newsblock-2__img" src="./img/news/news2.png" alt="news2">
                 <h3 class="section3-newsblock-2__title">Effective Advertising Pointers.</h3>
                 <p class="section3-newsblock-2__text">Having a home based business is a wonderful asset to your life...
@@ -457,19 +497,23 @@
                 <div class="section3-newsblock-2-info">
                     <img class="section3-newsblock-2-info__img" src="./img/news/authors/DominicFreeman.png"
                         alt="Dominic Freeman pic">
-                    <p class="section3-newsblock-2-info__text">Dominic Freeman</p>
-                    <p class="section3-newsblock-2-info__date">24 Apr 2017</p>
+                    <div class="section3-newsblock-2-info-text">
+                        <p class="section3-newsblock-2-info-text__text">Dominic Freeman</p>
+                        <p class="section3-newsblock-2-info-text__date">24 Apr 2017</p>
+                    </div>
                 </div>
             </div>
-            <div class="section3-newsblock-6">
+            <div class="section3-newsblock-3">
                 <img class="section3-newsblock-3__img" src="./img/news/news3.png" alt="news3">
                 <h3 class="section3-newsblock-3__title">Hypnotize Yourself Into The Ghost.</h3>
                 <p class="section3-newsblock-3__text">There are many things that are important to catalog design....</p>
                 <div class="section3-newsblock-3-info">
                     <img class="section3-newsblock-3-info__img" src="./img/news/authors/AliceWard.png"
                         alt="Alice Ward pic">
-                    <p class="section3-newsblock-3-info__text">Alice Ward</p>
-                    <p class="section3-newsblock-3-info__date">30 Dec 2017</p>
+                    <div class="section3-newsblock-3-info-text">
+                        <p class="section3-newsblock-3-info-text__text">Alice Ward</p>
+                        <p class="section3-newsblock-3-info-text__date">30 Dec 2017</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -513,85 +557,96 @@
     </section>
 
     <section class="section5" id="#section5">
-        <div id="map"></div>
-        <footer>
-            <div>
-                <div>
+        <div class="section5-map" id="map"></div>
+        <footer class="section5-footer">
+            <div class="section5-footer-contacts">
+                <div class="section5-footer-contacts-title">
                     <hr>
-                    <h2>get in touch</h2>
+                    <h2 class="section5-footer-contacts-title__text">get in touch</h2>
                 </div>
-                <div>
-                    <p>
+                <div class="section5-footer-contacts-data">
+                    <p class="section5-footer-contacts-data__item">
                         <svg display="none">
                             <symbol id="footer-marker" viewBox="0 0 24 24">
                                 <path
                                     d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z">
                             </symbol>
                         </svg>
-                        <svg class="section2-block2-left-textholder__marker-icon">
+                        <svg class="section5-footer-contacts-data__item-icon">
                             <use xlink:href="#footer-marker"></use>
                         </svg>
                         91 Nolan Extensions Suite 670
                     </p>
-                    <p>
+                    <p class="section5-footer-contacts-data__item">
                         <svg display="none">
                             <symbol id="phone" viewBox="0 0 24 24">
                                 <path
                                     d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z">
                             </symbol>
                         </svg>
-                        <svg class="section2-block2-left-textholder__marker-icon">
+                        <svg class="section5-footer-contacts-data__item-icon">
                             <use xlink:href="#phone"></use>
                         </svg>
                         +001 356-868-2454
                     </p>
-                    <p>
+                    <p class="section5-footer-contacts-data__item">
                         <svg display="none">
                             <symbol id="email" viewBox="0 0 24 24">
                                 <path
                                     d="M.026 24l11.974-11.607 11.974 11.607h-23.948zm11.964-23.961l-11.99 8.725v12.476l7.352-7.127-5.653-4.113 10.291-7.488 10.309 7.488-5.655 4.108 7.356 7.132v-12.476l-12.01-8.725z">
                             </symbol>
                         </svg>
-                        <svg class="section2-block2-left-textholder__marker-icon">
+                        <svg class="section5-footer-contacts-data__item-icon">
                             <use xlink:href="#email"></use>
                         </svg>
                         gahuy93@gmail.com
                     </p>
-                    <p>
+                    <p class="section5-footer-contacts-data__item">
                         <svg display="none">
                             <symbol id="time" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z">
                             </symbol>
                         </svg>
-                        <svg class="section2-block2-left-textholder__marker-icon">
+                        <svg class="section5-footer-contacts-data__item-icon">
                             <use xlink:href="#time"></use>
                         </svg>
                         From 07:05AM to 19:30PM
                     </p>
                 </div>
-                <div>
-                    <form action="#" method="POST">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <button type="button">submit</button>
+                <div class="section5-footer-contacts-form">
+                    <form class="section5-footer-contacts-form__item" action="#" method="POST">
+                        <input class="section5-footer-contacts-form__item-input" type="text" placeholder="Name">
+                        <input class="section5-footer-contacts-form__item-input" type="email" placeholder="Email">
+                        <button class="section5-footer-contacts-form__item-btn" type="button">submit</button>
                     </form>
                 </div>
             </div>
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
-                    <div class="col sm-12 md-6 lg-2">
-                        <div>
-                            <img src="./img/svg/Logo.svg" alt="Monticello logo">
+            <div class="section5-footer-credits container">
+                <div class="section5-footer-credits-row row row-cols-1 row-cols-md-2 row-cols-lg-2">
+                    <div class="section5-footer-credits-row-col1 col sm-12 md-6 lg-2">
+                        <div class="section5-footer-credits-row-col1-logo">
+                            <img class="section5-footer-credits-row-col1-logo__item" src="./img/svg/Logo.svg"
+                                alt="Monticello logo">
                         </div>
-                        <div>
-                            <p>Copyrights © 2017 Monticello Group</p>
-                            <p>Made with  by Ga Huy</p>
+                        <div class="section5-footer-credits-row-col1-text">
+                            <p class="section5-footer-credits-row-col1-text__item">Copyrights &copy; 2017 Monticello
+                                Group</p>
+                            <p class="section5-footer-credits-row-col1-text__item">Made with
+                                <svg display="none">
+                                    <symbol id="heart" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z">
+                                    </symbol>
+                                </svg>
+                                <svg class="section5-footer-credits-row-col1-text__item-icon">
+                                    <use xlink:href="#heart"></use>
+                                </svg> by Ga Huy</p>
                         </div>
                     </div>
 
-                    <div class="col sm-12 md-6 lg-2">
-                        <a class="section1-header-links__item" href="#" target="_blank">
+                    <div class="section5-footer-credits-links col sm-12 md-6 lg-2">
+                        <a class="section5-footer-credits-links__item" href="#" target="_blank">
                             <svg display="none">
                                 <symbol id="facebook-footer" viewBox="0 0 24 24">
                                     <g>
@@ -600,11 +655,11 @@
                                     </g>
                                 </symbol>
                             </svg>
-                            <svg class="section1-header-links__item-icon">
+                            <svg class="section5-footer-credits-links__item-icon">
                                 <use xlink:href="#facebook-footer"></use>
                             </svg>
                         </a>
-                        <a class="section1-header-links__item" href="#" target="_blank">
+                        <a class="section5-footer-credits-links__item__item" href="#" target="_blank">
                             <svg display="none">
                                 <symbol id="twitter-footer" viewBox="0 0 24 24">
                                     <g>
@@ -613,11 +668,11 @@
                                     </g>
                                 </symbol>
                             </svg>
-                            <svg class="section1-header-links__item-icon">
+                            <svg class="section5-footer-credits-links__item-icon">
                                 <use xlink:href="#twitter-footer"></use>
                             </svg>
                         </a>
-                        <a class="section1-header-links__item" href="#" target="_blank">
+                        <a class="section5-footer-credits-links__item" href="#" target="_blank">
                             <svg display="none">
                                 <symbol id="instagram-footer" viewBox="0 0 24 24">
                                     <g>
@@ -626,7 +681,7 @@
                                     </g>
                                 </symbol>
                             </svg>
-                            <svg class="section1-header-links__item-icon">
+                            <svg class="section5-footer-credits-links__item-icon">
                                 <use xlink:href="#instagram-footer"></use>
                             </svg>
                         </a>
@@ -649,8 +704,10 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtitn3TbAm4l-zz-skxQA2AkA8t6mV8l4&callback=initMap&libraries=&v=weekly"
         defer>
         </script>
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./JS/app.js"></script>
 </body>
 
 </html>
