@@ -6,118 +6,651 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Monticello</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./fonts/gothambold/font.css">
     <link rel="stylesheet" href="./fonts/GothamBook/font.css">
     <link rel="shortcut icon" href="./favico/fav.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section class="section1" id="section1">
+    <section class="section1">
         <header class="section1-header">
-            <div class="section1-header-logo"></div>
-
-            <div class="section1-header-nav">
-                <nav class="main-nav">
-                    <div class="toggle-btn">
-                        <span class="material-icons hamburger-menu">dehaze</span>
-                        <span class="material-icons close">clear</span>
-                    </div>
-
-                    <ul class="main-nav-list">
-                        <li class="main-nav-item">
-                            <a class="main-nav-link" href="#section1"><img class="main-nav-link-icon"
-                                    src="./img/svg/Ellipse.svg" xlink:href="./img/svg/Ellipse.svg" alt="elipse">About
-                                Us</a>
-                        </li>
-
-                        <li class="main-nav-item">
-                            <a class="main-nav-link" href="#section2"><img class="main-nav-link-icon"
-                                    src="./img/svg/Ellipse.svg" xlink:href="./img/svg/Ellipse.svg"
-                                    alt="elipse">projects</a>
-                        </li>
-
-                        <li class="main-nav-item">
-                            <a class="main-nav-link" href="#section3"><img class="main-nav-link-icon"
-                                    src="./img/svg/Ellipse.svg" xlink:href="./img/svg/Ellipse.svg" alt="elipse">news</a>
-                        </li>
-
-                        <li class="main-nav-item">
-                            <a class="main-nav-link login" href="#section4"><img class="main-nav-link-icon"
-                                    src="./img/svg/Ellipse.svg" xlink:href="./img/svg/Ellipse.svg"
-                                    alt="elipse">contact</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="section1-header-links">
-                    <a class="section1-header-links__item" href="#" target="_blank">
-                        <img class="section1-header-links__item-img" src="./img/svg/facebook.svg"
-                            xlink:href="./img/svg/facebook.svg" alt="facebook link logo">
-                    </a>
-                    <a class="section1-header-links__item" href="#" target="_blank">
-                        <img class="section1-header-links__item-img" src="./img/svg/twitter.svg"
-                            xlink:href="./img/svg/twitter.svg" alt="twitter link logo">
-                    </a>
-                    <a class="section1-header-links__item" href="#" target="_blank">
-                        <img class="section1-header-links__item-img" src="./img/svg/instagram.svg"
-                            xlink:href="./img/svg/instagram.svg" alt="instagram link logo">
-                    </a>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light section1-header-navbar">
+                <div class="section1-header-navbar-logo" id="section1">
+                    <img src="./img/svg/Logo.svg" alt="Monticello logo">
                 </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse section1-header-navbar-nav" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link section1-header-navbar-nav__item" href="#section1">
+                            <svg display="none">
+                                <symbol id="about" viewBox="0 0 32 32">
+                                    <g>
+                                        <path
+                                            d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                                    </g>
+                                </symbol>
+                            </svg>
+                            <svg class="section1-header-navbar-nav__item-icon">
+                                <use xlink:href="#about"></use>
+                            </svg>
+                            About Us</a>
+                        <a class="nav-link" href="#section2">
+                            <svg display="none">
+                                <symbol id="projects" viewBox="0 0 32 32">
+                                    <g>
+                                        <path
+                                            d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                                    </g>
+                                </symbol>
+                            </svg>
+                            <svg class="section1-header-navbar-nav__item-icon">
+                                <use xlink:href="#projects"></use>
+                            </svg>
+                            projects</a>
+                        <a class="nav-link" href="#section4">
+                            <svg display="none">
+                                <symbol id="news" viewBox="0 0 32 32">
+                                    <g>
+                                        <path
+                                            d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                                    </g>
+                                </symbol>
+                            </svg>
+                            <svg class="section1-header-navbar-nav__item-icon">
+                                <use xlink:href="#news"></use>
+                            </svg>
+                            news</a>
+                        <a class="nav-link" href="#section5">
+                            <svg display="none">
+                                <symbol id="contact" viewBox="0 0 32 32">
+                                    <g>
+                                        <path
+                                            d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                                    </g>
+                                </symbol>
+                            </svg>
+                            <svg class="section1-header-navbar-nav__item-icon">
+                                <use xlink:href="#contact"></use>
+                            </svg>
+                            contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="section1-header-links">
+                <a class="section1-header-links__item" href="#" target="_blank">
+                    <svg display="none">
+                        <symbol id="facebook" viewBox="0 0 24 24">
+                            <g>
+                                <path class="cls-1"
+                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z" />
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class="section1-header-links__item-icon">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+                <a class="section1-header-links__item" href="#" target="_blank">
+                    <svg display="none">
+                        <symbol id="twitter" viewBox="0 0 24 24">
+                            <g>
+                                <path class="cls-1"
+                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z" />
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class="section1-header-links__item-icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+                <a class="section1-header-links__item" href="#" target="_blank">
+                    <svg display="none">
+                        <symbol id="instagram" viewBox="0 0 24 24">
+                            <g>
+                                <path class="cls-1"
+                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z" />
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class="section1-header-links__item-icon">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                </a>
             </div>
         </header>
+
         <div class="section1-main">
             <h1 class="section1-main__title">Simple & mordern</h1>
             <p class="section1-main__subtitle">We make the world's beautiful every day</p>
         </div>
+
         <aside class="section1-asie">
             <nav class="section1-asie-nav">
                 <a href="#section1" class="section1-asie-nav__link">
-                    <img class="section1-asie-nav__link-img" src="./img/svg/Ellipse1.svg"
-                        xlink:href="./img/svg/Ellipse1.svg" alt="">
+                    <svg display="none">
+                        <symbol id="elipse1" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class="section1-header-navbar-nav__item-icon">
+                        <use xlink:href="#elipse1"></use>
+                    </svg>
                 </a>
                 <a href="#section2" class="section1-asie-nav__link">
-                    <img class="section1-asie-nav__link-img" src="./img/svg/Ellipse1.svg"
-                        xlink:href="./img/svg/Ellipse1.svg" alt="">
+                    <svg display="none">
+                        <symbol id="elipse2" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class="section1-header-navbar-nav__item-icon">
+                        <use xlink:href="#elipse2"></use>
+                    </svg>
                 </a>
                 <a href="#section3" class="section1-asie-nav__link">
-                    <img class="section1-asie-nav__link-img" src="./img/svg/Ellipse1.svg"
-                        xlink:href="./img/svg/Ellipse1.svg" alt="">
+                    <svg display="none">
+                        <symbol id="elipse3" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class="section1-header-navbar-nav__item-icon">
+                        <use xlink:href="#elipse3"></use>
+                    </svg>
                 </a>
                 <a href="#section4" class="section1-asie-nav__link">
-                    <img class="section1-asie-nav__link-img" src="./img/svg/Ellipse1.svg"
-                        xlink:href="./img/svg/Ellipse1.svg" alt="">
+                    <svg display="none">
+                        <symbol id="elipse4" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class="section1-header-navbar-nav__item-icon">
+                        <use xlink:href="#elipse4"></use>
+                    </svg>
                 </a>
                 <a href="#section5" class="section1-asie-nav__link">
-                    <img class="section1-asie-nav__link-img" src="./img/svg/Ellipse1.svg"
-                        xlink:href="./img/svg/Ellipse1.svg" alt="">
+                    <svg display="none">
+                        <symbol id="elipse5" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11z" />
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class="section1-header-navbar-nav__item-icon">
+                        <use xlink:href="#elipse5"></use>
+                    </svg>
                 </a>
             </nav>
         </aside>
 
         <div class="section1-arrow">
             <a class="section1-arrow__link" href="#section2">
-                <img class="section1-arrow__link-img" src="./img/svg/angel-down.svg"
-                    xlink:href="./img/svg/angel-down.svg" alt="scroll" />
+                <svg display="none">
+                    <symbol id="angle-down" viewBox="0 0 1000 1000">
+                        <g xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M500,10C229.4,10,10,229.3,10,500c0,270.7,219.3,490,490,490c270.7,0,490-219.3,490-490C990,229.3,770.7,10,500,10z M500,950.8C251.5,950.8,49.2,748.5,49.2,500C49.2,251.4,251.5,49.2,500,49.2c248.5,0,450.8,202.3,450.8,450.8C950.8,748.5,748.5,950.8,500,950.8z" />
+                            <path
+                                d="M472,616.9l27.7,27.7l221.7-221.7l-27.7-27.7l-194,194L306.6,396.1l-27.7,27.7l110.7,110.7L472,616.9z" />
+                        </g>
+                    </symbol>
+                </svg>
+                <svg class="section1-arrow__link-icon">
+                    <use xlink:href="#angle-down"></use>
+                </svg>
             </a>
         </div>
     </section>
 
-    <section class="section2" id="#section2">
+    <section class="section2 container">
+        <div class="section2-title">
+            <h2 class="section2-title__text" id="#section2">what do we do</h2>
+        </div>
+        <div class="section2-block1">
+            <div class="section2-block1-left">
+                <div class="section2-block1-left-layer1"></div>
+                <div class="section2-block1-left-layer2"></div>
+            </div>
+            <div class="section2-block1-right">
+                <p class="section2-block1-right__subtitle">One World</p>
+                <h2 class="section2-block1-right__title">Trade Center</h2>
+                <div class="section2-block1-right-textholder">
+                    <p class="section2-block1-right-textholder__text">Increasing prosperity in our lives can be
+                        accomplished by having the right frame of mind. The
+                        truth
+                        is, our thoughts are very powerful.
+                        They are capable of influencing every aspect of our daily lives, from our physical health to our
+                        social behaviors. I’m sure you’ve heard the adage, “As you think, so shall you be.”
 
+                        If we want to improve our lives, we must first improve our thoughts. Harnessing the power of
+                        thought
+                        in a positive way has the ability to create great change in our lives, including our financial
+                        well-being and prosperity. But how? How do we take something as intangible as thoughts, and
+                        manifest
+                        them into a physical reality?
+
+                        We must first understand that being prosperous is more than having a lot of money. Prosperity is
+                        a
+                        mindset, a way of interacting in our lives, and a way of thinking. Mastering this train of
+                        thought
+                        is not easy, but it is simple enough if we keep working on it consistently.
+
+                        Following are some ideas to help you improve your thoughts, and ultimately attract more
+                        prosperity
+                        into your life:
+
+                        Be grateful for the blessings in your life right now. Take a few minutes each day to express
+                        heartfelt gratitude for the good things in your life. Even more powerful, write a few of these
+                        blessings down each day. This helps to put your focus in the right direction — on abundance, not
+                        lack.
+
+                        Use positive affirmations to begin training yourself to think positively. Use “I am” statements
+                        such
+                        as “I am worthy of all that is good.” Write the statements down and repeat them nightly before
+                        bed.
+                        Over time, this will implant these thoughts into your subconscious mind, and you will begin to
+                        naturally believe them.
+
+                        Creative visualization can help you achieve prosperity by determining what it is you wish to
+                        achieve, and then thoroughly creating that image in your mind. This works in the same way
+                        affirmations do. Our subconscious will fill with images of prosperity, and eventually these
+                        subconscious “truths” will manifest in the physical. “See” yourself as being prosperous, and you
+                        will become so.
+
+                        Encourage yourself with the belief that you can achieve great things. This could also be one of
+                        your
+                        affirmations, but expand on it. If you know you can earn a certain salary, tell yourself you can
+                        earn more. Allow yourself to believe all things are possible, and you will gain the confidence
+                        needed to reach higher than you ever imagined you could. If you believe you can do it, you are
+                        more
+                        likely to take the risks associated with people who are highly successful. Prosperity and
+                        success go
+                        hand in hand, so take risks and aim higher.
+
+                        Start a savings account. As strange as it sounds, think about this: Like Attracts Like. Even if
+                        you
+                        can only afford to put a few dollars into your account every month, it will begin to build up
+                        and
+                        attract more money.
+
+                        Finally, believe you are already wealthy. The creative ability of our thoughts is such that we
+                        lend
+                        more power and energy to whatever we consistently focus on. Focusing on lack will create more
+                        lack.
+                        Focusing on wealth and prosperity will create . . . guess what?
+
+                        Remember that this is a process. You likely won’t change your circumstances in one day. But over
+                        time, with consistent focus, your thoughts will begin to attract what you want. Once you master
+                        this
+                        power of thought, there are truly no limits to what you can create!</p>
+                </div>
+                <button class="section2-block1-right-textholder__btn">more details</button>
+                <p class="section2-block1-right-textholder__marker">
+                    <svg display="none">
+                        <symbol id="block1-marker" viewBox="0 0 24 24">
+                            <path
+                                d="M12,2C8.134,2,5,5.134,5,9c0,5,7,13,7,13s7-8,7-13C19,5.134,15.866,2,12,2z M12,11.5c-1.381,0-2.5-1.119-2.5-2.5 c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5C14.5,10.381,13.381,11.5,12,11.5z">
+                            </path>
+                        </symbol>
+                    </svg>
+                    <svg class="section2-block1-right-textholder__marker-icon">
+                        <use xlink:href="#block1-marker"></use>
+                    </svg>
+                    New York City, United States - 1776 feet</p>
+            </div>
+        </div>
+        <div class="section2-block2">
+            <div class="section2-block2-left">
+                <p class="section2-block2-left__subtitle">International</p>
+                <h2 class="section2-block2-left__title">Commerce Centre</h2>
+                <div class="section2-block2-left-textholder">
+                    <p class="section2-block2-left-textholder__text">Successful businesses have many things in common,
+                        today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+
+                        Recognition can be illustrated by two individuals entering a crowded room at a party. Both walk
+                        to the far side of the room, one of them slips through the crowd easily and unnoticed as they
+                        reach the far side. The second person takes much longer to reach the far side because they are
+                        engaged in conversations along the way as they continue to meet acquaintances and friends during
+                        their path. Which type of person would you like to model your business after?
+
+                        Your business is in a continual battle for your customers’ recognition whether you know it or
+                        not. If you happen to be fortunate enough to be in a marketplace with very few competitors, that
+                        will not last for long. You need your business to be at the forefront of your client’s minds so
+                        that when they require your products or services, you are the go-to people.
+
+                        Marketing your business is a necessity. Putting your name and logo out there and keeping it
+                        there is a must. This lets clients know that you are “still around” and in business. Frequency
+                        is a good way to achieve the “stand out factor” in recognition. I am reminded of both television
+                        and radio ads I had heard of in the past. They run continually with a catch phrase or musical
+                        jingle over and over again on the radio or television until you are absolutely sick of hearing
+                        it. You also cannot get it out of your head. Although this type of advertising is expensive, it
+                        can be very effective, and the recognition factor is quite high. Television and radio can reach
+                        a large audience, and they are broad in their appeal. In a brief sentence, you are paying to
+                        market to both those that are your potential customers and a large segment of those who are not
+                        now and probably never will be your customers.
+
+                        There are more economical ways to pursue frequency, the point is to define your target market
+                        demographic, and invest your marketing funds into the locations that will best be seen by them.
+
+                        Another factor to consider is “can I market myself in a place where I will stand out from my
+                        competition, or where my competition does not have a presence?” Why would you market yourself in
+                        a flyer or newspaper right beside your competition and risk blending into a crowd, and
+                        ultimately being ignored? Another issue to look at is diversification. As the saying goes,
+                        “don’t put all your eggs in one basket”. When you look at your advertising budget for the year,
+                        try to find the affordable solutions that will continue to reap during the full year of your
+                        advertising budget. An expensive radio or television promotion may give short term gains for
+                        that weekend sale, but what about the rest of the year? Your clients may end up with the
+                        impression of where did they go, I haven’t seen or heard anything about them for so long.
+
+                        Don’t always look for the old standbys in marketing, but keep your eyes and ears open for the
+                        latest and greatest ways to market your business. With the costs of technology coming down
+                        dramatically new options such as digital advertising on LCD and Plasma screens are becoming more
+                        and more affordable, and the paper billboards and posters becoming a thing of the past. With the
+                        flexibility, and curb appeal of full color and motion video footage with computer generated
+                        graphics available to you, this is an option you don’t want to pass by without a good look.
+                        Ultimately, recognition is required if you want to get people “in the door” of your business (or
+                        on your website for the new e-businesses). This is going to cost you money, time and effort up
+                        front any way that you look at it, but if you have successfully reached your target market, the
+                        payoffs will be worth it.</p>
+                </div>
+                <button class="section2-block2-left-textholder__btn">more details</button>
+                <p class="section2-block2-left-textholder__marker">
+                    <svg display="none">
+                        <symbol id="block2-marker" viewBox="0 0 24 24">
+                            <path
+                                d="M12,2C8.134,2,5,5.134,5,9c0,5,7,13,7,13s7-8,7-13C19,5.134,15.866,2,12,2z M12,11.5c-1.381,0-2.5-1.119-2.5-2.5 c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5C14.5,10.381,13.381,11.5,12,11.5z">
+                            </path>
+                        </symbol>
+                    </svg>
+                    <svg class="section2-block2-left-textholder__marker-icon">
+                        <use xlink:href="#block2-marker"></use>
+                    </svg>
+                    Hong Kong - 1588 Feet</p>
+            </div>
+            <div class="section2-block2">
+                <div class="section2-block1-left-layer1"></div>
+                <div class="section2-block1-left-layer2"></div>
+            </div>
+        </div>
     </section>
 
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/popper.js/dist/popper-utils.js"></script>
+    <section class="section3" id="#section3">
+        <div class="section3-title">
+            <hr>
+            <h2 class="section3-title__text">latest news</h2>
+        </div>
+        <div class="section3-newsblock slick-slider">
+            <div class="section3-newsblock-1">
+                <img class="section3-newsblock-1__img" src="./img/news/news1.png" alt="news1">
+                <h3 class="section3-newsblock-1__title">See The Unmatched Beauty Of The Great.</h3>
+                <p class="section3-newsblock-1__text">Free directories: directories are perfect for customers that
+                    are... searching for</p>
+                <div class="section3-newsblock-1-info">
+                    <img class="section3-newsblock-1-info__img" src="./img/news/authors/IsaacDumn.png"
+                        alt="Isaac Dumn pic">
+                    <p class="section3-newsblock-1-info__text">Isaac Dunn</p>
+                    <p class="section3-newsblock-1-info__date">09 Feb 2017</p>
+                </div>
+            </div>
+            <div class="section3-newsblock-2">
+                <img class="section3-newsblock-2__img" src="./img/news/news2.png" alt="news2">
+                <h3 class="section3-newsblock-2__title">Effective Advertising Pointers.</h3>
+                <p class="section3-newsblock-2__text">Having a home based business is a wonderful asset to your life...
+                </p>
+                <div class="section3-newsblock-2-info">
+                    <img class="section3-newsblock-2-info__img" src="./img/news/authors/DominicFreeman.png"
+                        alt="Dominic Freeman pic">
+                    <p class="section3-newsblock-2-info__text">Dominic Freeman</p>
+                    <p class="section3-newsblock-2-info__date">24 Apr 2017</p>
+                </div>
+            </div>
+            <div class="section3-newsblock-3">
+                <img class="section3-newsblock-3__img" src="./img/news/news3.png" alt="news3">
+                <h3 class="section3-newsblock-3__title">Hypnotize Yourself Into The Ghost.</h3>
+                <p class="section3-newsblock-3__text">There are many things that are important to catalog design....</p>
+                <div class="section3-newsblock-3-info">
+                    <img class="section3-newsblock-3-info__img" src="./img/news/authors/AliceWard.png"
+                        alt="Alice Ward pic">
+                    <p class="section3-newsblock-3-info__text">Alice Ward</p>
+                    <p class="section3-newsblock-3-info__date">30 Dec 2017</p>
+                </div>
+            </div>
+            <div class="section3-newsblock-4">
+                <img class="section3-newsblock-1__img" src="./img/news/news1.png" alt="news1">
+                <h3 class="section3-newsblock-1__title">See The Unmatched Beauty Of The Great.</h3>
+                <p class="section3-newsblock-1__text">Free directories: directories are perfect for customers that
+                    are... searching for</p>
+                <div class="section3-newsblock-1-info">
+                    <img class="section3-newsblock-1-info__img" src="./img/news/authors/IsaacDumn.png"
+                        alt="Isaac Dumn pic">
+                    <p class="section3-newsblock-1-info__text">Isaac Dunn</p>
+                    <p class="section3-newsblock-1-info__date">09 Feb 2017</p>
+                </div>
+            </div>
+            <div class="section3-newsblock-5">
+                <img class="section3-newsblock-2__img" src="./img/news/news2.png" alt="news2">
+                <h3 class="section3-newsblock-2__title">Effective Advertising Pointers.</h3>
+                <p class="section3-newsblock-2__text">Having a home based business is a wonderful asset to your life...
+                </p>
+                <div class="section3-newsblock-2-info">
+                    <img class="section3-newsblock-2-info__img" src="./img/news/authors/DominicFreeman.png"
+                        alt="Dominic Freeman pic">
+                    <p class="section3-newsblock-2-info__text">Dominic Freeman</p>
+                    <p class="section3-newsblock-2-info__date">24 Apr 2017</p>
+                </div>
+            </div>
+            <div class="section3-newsblock-6">
+                <img class="section3-newsblock-3__img" src="./img/news/news3.png" alt="news3">
+                <h3 class="section3-newsblock-3__title">Hypnotize Yourself Into The Ghost.</h3>
+                <p class="section3-newsblock-3__text">There are many things that are important to catalog design....</p>
+                <div class="section3-newsblock-3-info">
+                    <img class="section3-newsblock-3-info__img" src="./img/news/authors/AliceWard.png"
+                        alt="Alice Ward pic">
+                    <p class="section3-newsblock-3-info__text">Alice Ward</p>
+                    <p class="section3-newsblock-3-info__date">30 Dec 2017</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="section4-title">
+            <hr>
+            <h2 class="section4-title__text" id="#section4">
+                gallery
+            </h2>
+        </div>
+
+        <div class="section4-content container">
+            <div class="section4-content-holder row row-cols-1 row-cols-md-2 row-cols-lg-2">
+                <div class="section4-content-holder-item1 col col-sm-12 md-6 lg-6">
+                    <img class="section4-content-holder-item1__img" src="./img/img3.png" alt="img3">
+                    <div class="section4-content-holder-item1-icon">
+                        <img class="section4-content-holder-item1-icon__item" src="./img/svg/360.svg" alt="360deg">
+                    </div>
+                </div>
+                <div class="section4-content-holder-item2 container col col-sm-12 md-6 lg-6">
+                    <div class="section4-content-holder-item2-block row row-cols-1 row-cols-md-2 row-cols-lg-2">
+                        <div class="section4-content-holder-item2-block1 col col-sm-12 md-6 lg-6">
+                            <img src="./img/img4.png" alt="img4">
+                        </div>
+                        <div class="section4-content-holder-item2-block2 col col-sm-12 md-6 lg-6">
+                            <img src="./img/img5.png" alt="img5">
+                        </div>
+                        <div class="section4-content-holder-item2-block3 col col-sm-12 md-6 lg-6">
+                            <img src="./img/img6.png" alt="img6">
+                        </div>
+                        <div class="section4-content-holder-item2-block4 col col-sm-12 md-6 lg-6">
+                            <img src="./img/img7.png" alt="img7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>see more</button>
+    </section>
+
+    <section class="section5" id="#section5">
+        <div id="map"></div>
+        <footer>
+            <div>
+                <div>
+                    <hr>
+                    <h2>get in touch</h2>
+                </div>
+                <div>
+                    <p>
+                        <svg display="none">
+                            <symbol id="footer-marker" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z">
+                            </symbol>
+                        </svg>
+                        <svg class="section2-block2-left-textholder__marker-icon">
+                            <use xlink:href="#footer-marker"></use>
+                        </svg>
+                        91 Nolan Extensions Suite 670
+                    </p>
+                    <p>
+                        <svg display="none">
+                            <symbol id="phone" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z">
+                            </symbol>
+                        </svg>
+                        <svg class="section2-block2-left-textholder__marker-icon">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        +001 356-868-2454
+                    </p>
+                    <p>
+                        <svg display="none">
+                            <symbol id="email" viewBox="0 0 24 24">
+                                <path
+                                    d="M.026 24l11.974-11.607 11.974 11.607h-23.948zm11.964-23.961l-11.99 8.725v12.476l7.352-7.127-5.653-4.113 10.291-7.488 10.309 7.488-5.655 4.108 7.356 7.132v-12.476l-12.01-8.725z">
+                            </symbol>
+                        </svg>
+                        <svg class="section2-block2-left-textholder__marker-icon">
+                            <use xlink:href="#email"></use>
+                        </svg>
+                        gahuy93@gmail.com
+                    </p>
+                    <p>
+                        <svg display="none">
+                            <symbol id="time" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z">
+                            </symbol>
+                        </svg>
+                        <svg class="section2-block2-left-textholder__marker-icon">
+                            <use xlink:href="#time"></use>
+                        </svg>
+                        From 07:05AM to 19:30PM
+                    </p>
+                </div>
+                <div>
+                    <form action="#" method="POST">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <button type="button">submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+                    <div class="col sm-12 md-6 lg-2">
+                        <div>
+                            <img src="./img/svg/Logo.svg" alt="Monticello logo">
+                        </div>
+                        <div>
+                            <p>Copyrights © 2017 Monticello Group</p>
+                            <p>Made with  by Ga Huy</p>
+                        </div>
+                    </div>
+
+                    <div class="col sm-12 md-6 lg-2">
+                        <a class="section1-header-links__item" href="#" target="_blank">
+                            <svg display="none">
+                                <symbol id="facebook-footer" viewBox="0 0 24 24">
+                                    <g>
+                                        <path class="cls-1"
+                                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z" />
+                                    </g>
+                                </symbol>
+                            </svg>
+                            <svg class="section1-header-links__item-icon">
+                                <use xlink:href="#facebook-footer"></use>
+                            </svg>
+                        </a>
+                        <a class="section1-header-links__item" href="#" target="_blank">
+                            <svg display="none">
+                                <symbol id="twitter-footer" viewBox="0 0 24 24">
+                                    <g>
+                                        <path class="cls-1"
+                                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z" />
+                                    </g>
+                                </symbol>
+                            </svg>
+                            <svg class="section1-header-links__item-icon">
+                                <use xlink:href="#twitter-footer"></use>
+                            </svg>
+                        </a>
+                        <a class="section1-header-links__item" href="#" target="_blank">
+                            <svg display="none">
+                                <symbol id="instagram-footer" viewBox="0 0 24 24">
+                                    <g>
+                                        <path class="cls-1"
+                                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z" />
+                                    </g>
+                                </symbol>
+                            </svg>
+                            <svg class="section1-header-links__item-icon">
+                                <use xlink:href="#instagram-footer"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtitn3TbAm4l-zz-skxQA2AkA8t6mV8l4&callback=initMap&libraries=&v=weekly"
         defer>
         </script>
-    <script src="./JS/app.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
