@@ -1,0 +1,116 @@
+.section4 {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-title {
+        width: 100%;
+        height: 312px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+               
+        &-line {
+            width: 110px;
+            height: 10px;
+            margin-bottom: 40px;
+            border-top: 2px solid #000; 
+        }
+
+        &__text {
+            font-size: 44px;
+            line-height: 22px;
+            color: #2c4058;
+            font-weight: 500;
+            font-family: "Gotham";
+            text-align: center;
+            text-transform: uppercase;            
+        }
+    }
+
+    &-content {
+        width: 100%;
+        height: 438px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        
+
+        &-item1 {
+            width: 580px;
+            height: 438px;
+            position: relative;
+            z-index: 1;
+            margin-right: 12px;
+
+            &-icon {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                top: -256px;
+                left: 250px;
+                z-index: 999;
+            }
+        }
+
+        &-block {
+            width: 580px;
+            height: 438px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &-item1 {
+                width: 580px;
+                height: 214px;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 10px;
+
+                &-block1 {
+                    margin-right: 10px;
+                }
+            }
+
+            &-item2 {
+                width: 580px;
+                height: 214px;
+                display: flex;
+                flex-direction: row;
+
+                &-block1 {
+                    margin-right: 10px;
+                }
+            }
+
+        }
+    }    
+
+    &-btn {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+
+        &__item {
+            width: 190px;
+            height: 50px;
+            margin-top: 60px;
+            background-color: #fff;
+            border: 1px solid #2c4058;
+            outline: none;
+            font-size: 14px;
+            line-height: 22px;
+            color: #2c4058;
+            font-family: "Gotham";
+            text-align: center;
+            text-transform: uppercase;            
+        }
+    }
+}

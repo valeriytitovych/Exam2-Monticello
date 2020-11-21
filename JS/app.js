@@ -38,3 +38,25 @@ window.onload = () => {
         ]
     });
 }
+
+function initMap() {
+
+    const uluru = { lat: 49.604, lng: 34.499 };
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 8,
+        center: uluru,
+    });
+
+    const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+    });
+    const infowindow = new google.maps.InfoWindow({
+        content: `<h2>Home, sweet home. Sewer, where lives Valeron Titovych</h2>`,
+    });
+
+    marker.addListener("click", () => {
+        infowindow.open(map, marker);
+    });
+}

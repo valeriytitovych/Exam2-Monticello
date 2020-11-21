@@ -1,5 +1,5 @@
 .section1 {
-    width: 100%;
+    width: 100% !important;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     background-size: cover;
 
     &-header {
-        width: 100%;
+        width: 100% !important;
         height: 160px;
         display: flex;
         justify-content: center;
@@ -61,7 +61,7 @@
     }
 
     &-main {
-        width: 100%;
+        width: 100% !important;
         height: 544px;
         position: relative;
         display: flex;
