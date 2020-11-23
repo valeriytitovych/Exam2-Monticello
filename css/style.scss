@@ -5,3 +5,23 @@
 @import "./section4.scss";
 @import "./section5.scss";
 @import "./slider.scss";
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('../fonts/gothambold/gothambold1.eot');
+    src: url('../fonts/gothambold/gothambold1.woff') format('woff2'),
+         url('../fonts/gothambold/gothambold1.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/GothamBook/GothamBook.eot');
+    src: url('../fonts/GothamBook/GothamBook.woff') format('woff'),
+         url('../fonts/GothamBook/GothamBook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}

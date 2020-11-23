@@ -45,7 +45,7 @@ p {
   line-height: 22px;
   font-weight: 300;
   color: #ffffff !important;
-  font-family: "Gotham";
+  font-family: "Gotham Bold";
   text-transform: uppercase;
 }
 .section1-header-navbar-nav-links__item:not(:last-child) {
@@ -837,4 +837,19 @@ p {
 .next {
   top: 238px;
   left: 1310px;
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../fonts/gothambold/gothambold1.eot");
+  src: url("../fonts/gothambold/gothambold1.woff") format("woff2"), url("../fonts/gothambold/gothambold1.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/GothamBook/GothamBook.eot");
+  src: url("../fonts/GothamBook/GothamBook.woff") format("woff"), url("../fonts/GothamBook/GothamBook.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }

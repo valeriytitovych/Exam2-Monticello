@@ -16,6 +16,34 @@
 })();
 
 (function () {
+    let content = document.querySelector('.section2-block1-right-textholder-hidden');
+    let show = document.querySelector('.section2-block1-right__btn');
+    let hide = document.querySelector('.section2-block1-right__btn');
+
+    show.addEventListener('click', () => {
+        content.style.display = "flex";
+    })
+
+    hide.addEventListener('click', () => {
+        content.style.display = "none";
+    })
+})();
+
+(function () {
+    let content = document.querySelector('.section2-block2-left-textholder-hidden');
+    let show = document.querySelector('.section2-block2-left__btn');
+    let hide = document.querySelector('.section2-block2-left__btn');
+
+    show.addEventListener('click', () => {
+        content.style.display = "flex";
+    })
+
+    hide.addEventListener('click', () => {
+        content.style.display = "none";
+    })
+})();
+
+(function () {
     $('.slider').slick({
         dots: true,
         autoplay: true,
@@ -66,10 +94,16 @@
         e.preventDefault();
 
         const formData = new FormData(this);
+        const searchParams = new URLSearchParams();
+
+        for (const pair of formData) {
+            searchParams.append(pair[0], pair[1]);
+
+        };
 
         fetch('data.php', {
             method: 'post',
-            body: formData
+            body: searchParams
         }).then(function (pesponse) {
             return pesponse.text();
         }).then(function (text) {
