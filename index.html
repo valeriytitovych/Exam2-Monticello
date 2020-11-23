@@ -22,9 +22,9 @@
 <body>
     <section class="section1">
         <header class="section1-header">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light section1-header-navbar">
-                <div class="section1-header-navbar-logo" id="section1">
-                    <img src="./img/svg/Logo.svg" alt="Monticello logo">
+            <nav class="navbar navbar-expand-md navbar-light section1-header-navbar">
+                <div class="section1-header-navbar-logo">
+                    <img src="./img/svg/Logo.svg" alt="Monticello logo" id="about-us">
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
                 </button>
                 <div class="collapse navbar-collapse section1-header-navbar-nav" id="navbarNavAltMarkup">
                     <div class="navbar-nav section1-header-navbar-nav-links">
-                        <a class="nav-link section1-header-navbar-nav-links__item" href="#section1">
+                        <a class="nav-link active scroll-to section1-header-navbar-nav-links__item" href="#about-us">
                             <svg display="none">
                                 <symbol id="about" viewBox="0 0 32 32">
                                     <g>
@@ -45,7 +45,7 @@
                                 <use xlink:href="#about"></use>
                             </svg>
                             About Us</a>
-                        <a class="nav-link section1-header-navbar-nav-links__item" href="#cont2">
+                        <a class="nav-link scroll-to section1-header-navbar-nav-links__item" href="#our-projects">
                             <svg display="none">
                                 <symbol id="projects" viewBox="0 0 32 32">
                                     <g>
@@ -58,7 +58,7 @@
                                 <use xlink:href="#projects"></use>
                             </svg>
                             projects</a>
-                        <a class="nav-link section1-header-navbar-nav-links__item" href="#section4">
+                        <a class="nav-link scroll-to section1-header-navbar-nav-links__item" href="#latest-news">
                             <svg display="none">
                                 <symbol id="news" viewBox="0 0 32 32">
                                     <g>
@@ -71,7 +71,7 @@
                                 <use xlink:href="#news"></use>
                             </svg>
                             news</a>
-                        <a class="nav-link section1-header-navbar-nav-links__item" href="#section5">
+                        <a class="nav-link scroll-to section1-header-navbar-nav-links__item" href="#our-contacts">
                             <svg display="none">
                                 <symbol id="contact" viewBox="0 0 32 32">
                                     <g>
@@ -138,7 +138,7 @@
 
             <aside class="section1-main-aside">
                 <nav class="section1-main-aside-nav">
-                    <a href="#section1" class="section1-asie-nav__link">
+                    <a href="#about-us" class="section1-asie-nav__link scroll-to">
                         <svg display="none">
                             <symbol id="elipse1" viewBox="0 0 24 24">
                                 <g>
@@ -151,7 +151,7 @@
                             <use xlink:href="#elipse1"></use>
                         </svg>
                     </a>
-                    <a href="#section2" class="section1-main-aside-nav__link">
+                    <a href="#our-projects" class="section1-main-aside-nav__link scroll-to">
                         <svg display="none">
                             <symbol id="elipse2" viewBox="0 0 24 24">
                                 <g>
@@ -164,7 +164,7 @@
                             <use xlink:href="#elipse2"></use>
                         </svg>
                     </a>
-                    <a href="#section3" class="section1-main-aside-nav__link">
+                    <a href="#international" class="section1-main-aside-nav__link scroll-to">
                         <svg display="none">
                             <symbol id="elipse3" viewBox="0 0 24 24">
                                 <g>
@@ -177,7 +177,7 @@
                             <use xlink:href="#elipse3"></use>
                         </svg>
                     </a>
-                    <a href="#section4" class="section1-main-aside-nav__link">
+                    <a href="#latest-news" class="section1-main-aside-nav__link scroll-to">
                         <svg display="none">
                             <symbol id="elipse4" viewBox="0 0 24 24">
                                 <g>
@@ -190,7 +190,7 @@
                             <use xlink:href="#elipse4"></use>
                         </svg>
                     </a>
-                    <a href="#section5" class="section1-main-aside-nav__link">
+                    <a href="#our-contacts" class="section1-main-aside-nav__link scroll-to">
                         <svg display="none">
                             <symbol id="elipse5" viewBox="0 0 24 24">
                                 <g>
@@ -208,7 +208,7 @@
         </div>
 
         <div class="section1-arrow">
-            <a class="section1-arrow__link" href="#cont2">
+            <a class="section1-arrow__link scroll-to" href="#our-projects">
                 <svg display="none">
                     <symbol id="angle-down" viewBox="0 0 1000 1000">
                         <g xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +229,7 @@
     <section class="section2 container-fluid">
         <div class="section2-title">
             <div class="section2-title-line"></div>
-            <h2 class="section2-title__text" id="#cont2">what do we do</h2>
+            <h2 class="section2-title__text" id="our-projects">what do we do</h2>
         </div>
         <div class="section2-block1">
             <div class="section2-block1-left">
@@ -350,7 +350,7 @@
         </div>
         <div class="section2-block2">
             <div class="section2-block2-left">
-                <p class="section2-block2-left__subtitle">International</p>
+                <p class="section2-block2-left__subtitle" id="international">International</p>
                 <h2 class="section2-block2-left__title">Commerce Centre</h2>
                 <div class="section2-block2-left-textholder">
                     <p class="section2-block2-left-textholder__text">Successful businesses have many things in common,
@@ -427,10 +427,10 @@
         </div>
     </section>
 
-    <section class="section3" id="#section3">
+    <section class="section3">
         <div class="section3-title">
             <div class="section3-title-line"></div>
-            <h2 class="section3-title__text">latest news</h2>
+            <h2 class="section3-title__text" id="latest-news">latest news</h2>
         </div>
 
         <div class="section3-newsblock slider">
@@ -503,26 +503,13 @@
                     </div>
                 </div>
             </div>
-            <div class="section3-newsblock-3">
-                <img class="section3-newsblock-3__img" src="./img/news/news3.png" alt="news3">
-                <h3 class="section3-newsblock-3__title">Hypnotize Yourself Into The Ghost.</h3>
-                <p class="section3-newsblock-3__text">There are many things that are important to catalog design....</p>
-                <div class="section3-newsblock-3-info">
-                    <img class="section3-newsblock-3-info__img" src="./img/news/authors/AliceWard.png"
-                        alt="Alice Ward pic">
-                    <div class="section3-newsblock-3-info-text">
-                        <p class="section3-newsblock-3-info-text__text">Alice Ward</p>
-                        <p class="section3-newsblock-3-info-text__date">30 Dec 2017</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
     <section class="section4">
         <div class="section4-title">
             <div class="section4-title-line"></div>
-            <h2 class="section4-title__text" id="#section4">
+            <h2 class="section4-title__text" id="#news">
                 gallery
             </h2>
         </div>
@@ -558,13 +545,13 @@
         </div>
     </section>
 
-    <section class="section5" id="#section5">
+    <section class="section5">
         <div class="section5-map" id="map"></div>
         <footer class="section5-footer">
             <div class="section5-footer-contacts">
                 <div class="section5-footer-contacts-title">
                     <div class="section5-footer-contacts-title-line"></div>
-                    <h2 class="section5-footer-contacts-title__text">get in touch</h2>
+                    <h2 class="section5-footer-contacts-title__text" id="our-contacts">get in touch</h2>
                 </div>
                 <div class="section5-footer-contacts-content">
                     <div class="section5-footer-contacts-content-data">
@@ -618,13 +605,13 @@
                         </p>
                     </div>
                     <div class="section5-footer-contacts-content-form">
-                        <form class="section5-footer-contacts-content-form__item" action="#" method="POST">
-                            <input class="section5-footer-contacts-content-form__item-input1" type="text"
-                                placeholder="Name">
-                            <input class="section5-footer-contacts-content-form__item-input2" type="email"
-                                placeholder="Email">
+                        <form class="section5-footer-contacts-content-form__item" action="./JS/data.php" method="POST">
+                            <input class="section5-footer-contacts-content-form__item-input1" name="username"
+                                type="text" placeholder="Name">
+                            <input class="section5-footer-contacts-content-form__item-input2" name="useremail"
+                                type="email" placeholder="Email">
                             <button class="section5-footer-contacts-content-form__item-btn"
-                                type="button">submit</button>
+                                type="submit">submit</button>
                         </form>
                     </div>
                 </div>
@@ -719,6 +706,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./slick-1.8.1/slick/slick.min.js"></script>
     <script src="./JS/app.js"></script>
+    <script src="./JS/map.js"></script>
 </body>
 
 </html>

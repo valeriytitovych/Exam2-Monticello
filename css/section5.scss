@@ -19,7 +19,8 @@
             height: 454px;
             position: absolute;
             top: -300px;
-            left: 564px;
+            left: 50%;
+            margin-left: -386px;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -115,7 +116,19 @@
                             color: #2c4058;
                             font-family: "Gotham";
                             text-align: center;
-                            text-transform: uppercase;                                                      
+                            text-transform: uppercase;
+                            
+                            &:hover {
+                                filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.8));
+                                font-size: 16px;
+                                color: #185caf;
+                            }
+                
+                            &:focus {
+                                filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.8));
+                                font-size: 16px;
+                                color: #185caf;  
+                            }
                         }
                     }                    
                 }
@@ -196,6 +209,16 @@
                         width: 40px;
                         height: 40px;
                         fill: #fff;
+
+                        &:hover {
+                            filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
+                            fill: rgb(61, 89, 212);
+                            opacity: .8;
+                        }
+    
+                        &:focus {
+                            fill: rgb(79, 216, 235);   
+                        }  
                     }
                 }
             }

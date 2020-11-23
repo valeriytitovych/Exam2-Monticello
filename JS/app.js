@@ -1,6 +1,24 @@
-window.onload = () => {
+(function () {
+    const anchors = document.querySelectorAll('a.scroll-to')
+
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
+
+            const blockID = anchor.getAttribute('href')
+
+            document.querySelector(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    }
+})();
+
+(function () {
     $('.slider').slick({
         dots: true,
+        autoplay: true,
         infinite: true,
         speed: 300,
         slidesToShow: 3,
@@ -14,6 +32,7 @@ window.onload = () => {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
+                    autoplay: true,
                     infinite: false,
                     dots: true
                 }
@@ -23,7 +42,7 @@ window.onload = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    infinite: false,
+                    infinite: true,
                     dots: true
                 }
             },
@@ -32,31 +51,31 @@ window.onload = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    autoplay: true,
                     infinite: true
                 }
             }
         ]
     });
-}
+})();
 
-function initMap() {
+(function () {
+    const myForm = document.querySelector('.section5-footer-contacts-content-form__item');
 
-    const uluru = { lat: 49.604, lng: 34.499 };
+    myForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 8,
-        center: uluru,
+        const formData = new FormData(this);
+
+        fetch('data.php', {
+            method: 'post',
+            body: formData
+        }).then(function (pesponse) {
+            return pesponse.text();
+        }).then(function (text) {
+            console.log(text);
+        }).catch(function (error) {
+            console.error(error);
+        })
     });
-
-    const marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-    });
-    const infowindow = new google.maps.InfoWindow({
-        content: `<h2>Home, sweet home. Sewer, where lives Valeron Titovych</h2>`,
-    });
-
-    marker.addListener("click", () => {
-        infowindow.open(map, marker);
-    });
-}
+})();
